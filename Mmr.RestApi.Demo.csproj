@@ -8,11 +8,26 @@
     <UserSecretsId>96deebec-5848-478e-b8f6-b57ce46325a7</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
+    <AssemblyName>Mmr.RestApi.Demo</AssemblyName>
+    <SignAssembly>False</SignAssembly>
+    <Title>Mmr Rest API demo</Title>
+    <Version>1.0.0</Version>
+    <Authors>Michal Marcin</Authors>
+    <Description>Simple Rest API demo project</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/FaustDantes/Mmr.RestApi.Demo</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
